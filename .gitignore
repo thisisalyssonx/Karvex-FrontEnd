@@ -1,0 +1,70 @@
+
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# Node dependencies
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+expo-env.d.ts
+
+# Build outputs
+dist/
+web-build/
+build/
+coverage/
+
+# React Native / Native build folders (keep source but ignore generated builds)
+android/.gradle/
+android/local.properties
+android/**/build/
+ios/Pods/
+ios/build/
+
+# Keystores / signing
+*.jks
+*.p8
+*.p12
+*.key
+*.keystore
+*.pem
+*.orig.*
+
+# Expo / credentials
+expo-credentials.json
+*.expo-credentials
+android/app/google-services.json
+ios/GoogleService-Info.plist
+
+# Metro
+.metro-health-check*
+
+# Debug / logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS
+.DS_Store
+
+# Local env files (ignore envs but keep example)
+.env
+.env.*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+
+# Misc
+app-example

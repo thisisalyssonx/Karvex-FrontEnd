@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "Karvex",
+    "slug": "Karvex",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/karvex-icon.png",
+    "scheme": "karvex",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Precisamos acessar a câmera para você tirar fotos do veículo.",
+        "NSPhotoLibraryUsageDescription": "Precisamos acessar a galeria para você selecionar fotos."
+      }
+    },
+
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/karvex-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.karvex",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./src/assets/images/favicon.png"
+    },
+
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./src/assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser"
+    ],
+
+    "experiments": {
+      "typedRoutes": true
+    },
+
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "3659298a-a6f4-4b63-b4cd-2d40d88d960a"
+      },
+
+      "FIREBASE_API_KEY": "AIzaSyBh30aYIiLOxpDXPbDDek_HxfniEf6Ln2U",
+      "FIREBASE_AUTH_DOMAIN": "karvex-v0fp0r.firebaseapp.com",
+      "FIREBASE_PROJECT_ID": "karvex-v0fp0r",
+      "FIREBASE_STORAGE_BUCKET": "karvex-v0fp0r.appspot.com",
+      "FIREBASE_MESSAGING_SENDER_ID": "357519153489",
+      "FIREBASE_APP_ID": "1:357519153489:web:07bbdd1b53850a332b9b70"
+    }
+  }
+}
